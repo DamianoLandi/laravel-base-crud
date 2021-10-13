@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 125px;
+  border-top: 25px solid #1C1C1C;
+  padding-top: 5px;
+}
+header img {
+  height: 80%;
+}
+header ul {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+header ul a {
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-bottom: 33px;
+}
+header ul a:hover {
+  color: dodgerblue;
+  border-bottom: 5px solid dodgerblue;
+}
+
+#jumbo {
+  height: 450px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+#info {
+  height: 400px;
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#info .row {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+#info .row h3 {
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#info .row a {
+  color: #959595;
+}
+#info .row a:hover {
+  color: white;
+}
+
+footer {
+  background-color: #303030;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer button {
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid dodgerblue;
+  border-radius: 0%;
+  font-size: 17px;
+  padding: 15px;
+  cursor: pointer;
+}
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+footer .social-media span {
+  font-size: 17px;
+  color: dodgerblue;
+  text-transform: uppercase;
+}
+footer .social-media img {
+  height: 40px;
+}
+
+#comics-list {
+  color: white;
+  background-color: gray;
+  padding: 50px;
+}
+#comics-list .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#comics-list .container .card {
+  flex-basis: 15%;
+}
+#comics-list .container .card .poster {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+}
+#comics-list .container .card .poster img {
+  width: 100%;
+}
+
+.blue-text {
+  color: dodgerblue;
+}
+
+#comic-main {
+  display: flex;
+  justify-content: space-between;
+}
+#comic-main .info {
+  flex-basis: 55%;
+}
+#comic-main .info .shopping {
+  display: flex;
+  justify-content: space-between;
+  background-color: #28c728;
+  color: white;
+  padding: 5px 10px;
+}
+#comic-main .info .shopping .price {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 70%;
+}
+#comic-main .sidebar {
+  flex-basis: 40%;
+}
+
+#extra-info {
+  background-color: lightgrey;
+  padding: 50px 10px;
+}
+#extra-info .container {
+  display: flex;
+}
+#extra-info .container .col {
+  flex-basis: 50%;
+  padding: 0 20px;
+}
+#extra-info .container .col h2 {
+  margin-bottom: 25px;
+  text-align: left;
+}
+#extra-info .container .col .row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+#extra-info .container .col .row:first-of-type {
+  border-top: 1px solid gray;
+}
+#extra-info .container .col .row .list {
+  flex-basis: 60%;
+}

@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+  
+ul{
+    list-style-type: none;
+}
+  
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 125px;
+    border-top: 25px solid #1C1C1C;
+    padding-top: 5px;
+    img{
+        height: 80%;
+    }
+    ul{
+        flex-basis: 40%;
+        display: flex;
+        justify-content: space-around;
+        a{
+            color: black;   
+            font-size: 15px;
+            text-transform: uppercase;
+            padding-bottom: 33px;
+            &:hover{
+                color: dodgerblue;
+                border-bottom: 5px solid dodgerblue;
+            }
+        }
+    }
+}
+
+#jumbo{
+    height: 450px;
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+
+
+#info{
+    height: 400px;
+    background-image: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .row{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+        h3{
+            color: white;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        a{
+            color: #959595;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #303030;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button{
+        color: white;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 2px solid dodgerblue;
+        border-radius: 0%;
+        font-size: 17px;
+        padding: 15px;
+        cursor: pointer;
+    }
+    .social-media{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 20%;
+        span{
+            font-size: 17px;
+            color: dodgerblue;
+            text-transform: uppercase;
+        }
+        img{
+            height: 40px;
+        }
+    }
+}
