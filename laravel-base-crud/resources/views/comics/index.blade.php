@@ -12,6 +12,8 @@
                     </a>
                 </div>
                 <span>{{$comic['title']}}</span>
+                <br>
+                <a href='{{route("comics.edit", $comic->id)}}'>Modifica</a>
             </div>
         
         @endforeach

@@ -21,6 +21,5 @@
             <img src="{{$comic['thumb'] }}" alt="Poster">
         </div>
     </div>
-</div>
 
 @endsection
