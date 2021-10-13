@@ -15,9 +15,8 @@
         <li><a href="{{ route('home') }}">Home</a></li>
             <li><a href="{{ route('characters') }}">Characters</a></li>
             <li><a href="{{ route('comics.index') }}">Comics</a></li>
+            <li><a href="{{ route('comics.create') }}">Aggiungi Comics</a></li>
             <li><a href="{{ route('movies') }}">Movies</a></li>
-            <li><a href="{{ route('tv') }}">TV</a></li>
-            <li><a href="{{ route('games') }}">Games</a></li>
             <li><a href="{{ route('collectibles') }}">Collectibles</a></li>
         </ul>
     </header>
