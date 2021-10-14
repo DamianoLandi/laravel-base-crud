@@ -15,6 +15,11 @@
             </p>
         </div>
         <p>{{$comic['description']}}</p>
+        <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
+            @method("DELETE")
+            @csrf
+            <button type="submit">Elimina</button>
+        </form>
     </div>
     <div class="sidebar">
         <div class="sidebar-img-container">

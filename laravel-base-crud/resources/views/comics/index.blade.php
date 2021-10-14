@@ -14,6 +14,11 @@
                 <span>{{$comic['title']}}</span>
                 <br>
                 <a href='{{route("comics.edit", $comic->id)}}'>Modifica</a>
+                <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
+                    @method("DELETE")
+                    @csrf
+                    <button type="submit">Elimina</button>
+                </form>
             </div>
         
         @endforeach
